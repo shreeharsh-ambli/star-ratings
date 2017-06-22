@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'star-rating',
@@ -6,11 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./star-rating.component.css']
 })
 export class StarRatingComponent implements OnInit {
+
   @Input() rating: number;
+  @Input() color: string;
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {  
   }
-
 }
